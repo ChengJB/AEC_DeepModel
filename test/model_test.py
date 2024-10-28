@@ -69,7 +69,7 @@ complex_stft = per_nearend_magnitude * nearend_mic_phase  # 振幅*相位=语音
 print("complex_stft", complex_stft.shape)  # [1, 161, 999]
 
 per_nearend = torch.istft(complex_stft, n_fft=320, hop_length=160, win_length=320,
-                          window=torch.hann_window(window_length=320).to("cuda"))
+                          window=torch.hann_window(window_length=320))
 
 torchaudio.save("./predict/nearend_speech_fileid_9992.wav", src=per_nearend.cpu().detach(), sample_rate=fs)
 # print("近端语音", per_nearend.shape)    # [1, 159680]

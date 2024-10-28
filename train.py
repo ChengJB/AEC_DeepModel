@@ -14,7 +14,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     # 重头开始训练 defaule=None, 继续训练defaule设置为'/**.pth'
     parser.add_argument("--model_name", type=str, default=None, help="是否加载模型继续训练 '/50.pth' None")
-    parser.add_argument("--batch-size", type=int, default=16, help="")
+    parser.add_argument("--batch-size", type=int, default=1,help="")
     parser.add_argument("--epochs", type=int, default=20)
     parser.add_argument('--lr', type=float, default=3e-4, help='学习率 (default: 0.01)')
     parser.add_argument('--train_data', default="./data_preparation/Synthetic/TRAIN", help='数据集的path')

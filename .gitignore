@@ -16,3 +16,4 @@ data_preparation/Synthetic/VAL/echo_signal/*.wav
 data_preparation/Synthetic/VAL/farend_speech/*.wav
 data_preparation/Synthetic/VAL/nearend_mic_signal/*.wav
 data_preparation/Synthetic/VAL/nearend_speech/*.wav
+/data_preparation/synthetic
